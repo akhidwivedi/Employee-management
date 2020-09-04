@@ -1,0 +1,15 @@
+{% extends "employee/base.html" %}
+
+{% block content %}
+<div class="login">
+    <p> USER LOGIN</p>
+    <form action=""  method="POST" class="d-inline">
+                 {% csrf_token %}
+
+                 {{form}}
+    
+       
+        <input type= "submit"    value="Go"><br><br>
+    </form>
+    
+    {% endblock %}
